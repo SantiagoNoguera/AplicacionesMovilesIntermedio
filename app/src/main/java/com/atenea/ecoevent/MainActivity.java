@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         //Crear archivo para datos de usuarios y escribir los datos.
         File users = new File(getFilesDir(), "users.txt");
         try {
-            System.out.println(getFilesDir());
             FileWriter writer = new FileWriter(users);
             writer.append("root,root,root@email.com,pass\n");
             writer.flush();

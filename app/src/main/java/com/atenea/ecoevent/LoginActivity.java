@@ -62,10 +62,6 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             reader.close();
-
-            for (User user: users) {
-                Log.d("Usuarios", "Nombre: " + user.getName() + "\nUsuario: " + user.getUsername() + "\nCorreo: " + user.getEmail() + "\nContraseña: " + user.getPassword());
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }

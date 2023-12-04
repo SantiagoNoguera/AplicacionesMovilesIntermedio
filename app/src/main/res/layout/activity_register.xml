@@ -22,14 +22,14 @@
         android:text="EcoEvent"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,12 +58,8 @@
             android:text="Registro"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="40dp"
+            android:textSize="35dp"
             android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,10 +97,6 @@
             android:hint="Ingrese su Nombre"
             android:inputType="textPersonName" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,10 +132,6 @@
             android:layout_marginEnd="25dp"
             android:hint="email@example.com"
             android:inputType="textEmailAddress" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -181,10 +169,6 @@
             android:hint="Ingresa tu Contraseña"
             android:inputType="textPassword" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,13 +204,63 @@
             android:layout_marginEnd="25dp"
             android:hint="Confirma tu Contraseña"
             android:inputType="textPassword" />
-
-        <Space
+        
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Acepto los terminos y condiciones."
+                android:textSize="11dp"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Documento"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_data_processing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Acepto las politicas de tratamiento de datos."
+                android:textSize="11dp"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Documento"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
