@@ -1,3 +1,24 @@
 <resources>
+    <!--Nombre de la aplicación-->
     <string name="app_name">EcoEvent</string>
+
+    <!--Opciones del bottom app bar-->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_categories">Categorias</string>
+    <string name="menu_statistics">Estadísticas</string>
+    <string name="menu_tips">Consejos</string>
+
+    <!-- Opciones de configuración -->
+    <string name="option_1">
+        <font color="#000000">inicio</font>
+    </string>
+    <string name="option_2">
+        <font color="#000000">categorias</font>
+    </string>
+    <string name="option_3">
+        <font color="#000000">estadisticas</font>
+    </string>
+    <string name="option_4">
+        <font color="#000000">consejos</font>
+    </string>
 </resources>

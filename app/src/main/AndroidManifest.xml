@@ -22,7 +22,7 @@
             android:name=".TipsActivity"
             android:exported="false" />
         <activity
-            android:name=".EstadisticsActivity"
+            android:name=".StatisticsActivity"
             android:exported="false" />
         <activity
             android:name=".CategoriesActivity"

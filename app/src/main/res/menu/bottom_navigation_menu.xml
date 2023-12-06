@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Elemento del menú para la opción de inicio -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/menu_home"
+        android:title="@string/menu_home" />
+
+    <!-- Elemento del menú para la opción de categotias -->
+    <item
+        android:id="@+id/navigation_categories"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_categories" />
+
+    <!-- Elemento del menú para la opción de estadísticas -->
+    <item
+        android:id="@+id/navigation_statistics"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/menu_statistics" />
+
+    <!-- Elemento del menú para la opción de consejos -->
+    <item
+        android:id="@+id/navigation_tips"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/menu_tips" />
+
+</menu>

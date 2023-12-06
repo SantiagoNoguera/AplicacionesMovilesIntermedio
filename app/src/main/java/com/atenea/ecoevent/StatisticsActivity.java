@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EstadisticsActivity extends AppCompatActivity {
+public class StatisticsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadistics);
+        setContentView(R.layout.activity_stadistics);
     }
 }
