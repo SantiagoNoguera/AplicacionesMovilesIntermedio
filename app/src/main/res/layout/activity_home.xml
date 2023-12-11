@@ -18,25 +18,54 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-        
-        <ImageView
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:src="@drawable/logo"/>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/logo"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EcoEvent"
+                android:textSize="60sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
         <Space
-            android:layout_width="20dp"
-            android:layout_height="match_parent"/>
-        
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EcoEvent"
-            android:textSize="60sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:text="Resumen de tu actividad"
+            android:textAlignment="center"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_events_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textAlignment="center"
+            android:textSize="100dp"
+            android:textStyle="bold"
+            android:textColor="@color/success"/>
 
     </LinearLayout>
 
