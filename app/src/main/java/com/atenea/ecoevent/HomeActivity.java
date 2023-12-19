@@ -134,14 +134,13 @@ public class HomeActivity extends AppCompatActivity {
     //Método que muestra en pantalla la cantidad de cada elemento con su color correspondiente.
     private void showDataInformation(TextView textView, Integer number) {
         String text = String.valueOf(number);
+        textView.setText(text);
 
         //Determinar el color que tomará la información a mostrar.
             if (number == 0) {
                 textView.setTextColor(getResources().getColor(R.color.black, null));
-                textView.setText(text);
             } else if (number < 0) {
                 textView.setTextColor(getResources().getColor(R.color.error, null));
-                textView.setText(text);
             } else {
             textView.setTextColor(getResources().getColor(R.color.success, null));
             textView.setText("+" + text);
