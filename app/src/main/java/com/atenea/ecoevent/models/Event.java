@@ -2,7 +2,7 @@ package com.atenea.ecoevent.models;
 
 import java.util.Date;
 
-public class Events {
+public class Event {
 
     private String name;
     private Date date;
@@ -12,9 +12,9 @@ public class Events {
     private Integer reused;
     private Integer recycled;
 
-    public Events(String name, Date date, Integer food, Integer drink, Integer decoration, Integer reused, Integer recycled) {
+    public Event(String name, Date date, Integer food, Integer drink, Integer decoration, Integer reused, Integer recycled) {
         this.name = name;
-        this.date = new Date();
+        this.date = date;
         this.food = food;
         this.drink = drink;
         this.decoration = decoration;
@@ -77,4 +77,5 @@ public class Events {
     public void setRecycled(Integer recycled) {
         this.recycled = recycled;
     }
+
 }
