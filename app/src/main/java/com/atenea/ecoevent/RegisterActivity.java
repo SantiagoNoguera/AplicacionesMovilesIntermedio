@@ -66,7 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                //Corroborar que las politicas de tratamiento de datos se accepten.
+                //Corroborar que los terminos y condiciones se accepten.
                 if (!termsConditionsCB.isChecked()) {
                     Toast.makeText(getApplicationContext(), "Debe aceptar los terminos y condiciones.", Toast.LENGTH_SHORT).show();
                     return;
