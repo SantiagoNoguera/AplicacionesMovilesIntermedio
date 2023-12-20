@@ -4,14 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.atenea.ecoevent.models.Event;
-import com.atenea.ecoevent.models.User;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -137,11 +134,11 @@ public class HomeActivity extends AppCompatActivity {
         textView.setText(text);
 
         //Determinar el color que tomará la información a mostrar.
-            if (number == 0) {
-                textView.setTextColor(getResources().getColor(R.color.black, null));
-            } else if (number < 0) {
-                textView.setTextColor(getResources().getColor(R.color.error, null));
-            } else {
+        if (number == 0) {
+            textView.setTextColor(getResources().getColor(R.color.black, null));
+        } else if (number < 0) {
+            textView.setTextColor(getResources().getColor(R.color.error, null));
+        } else {
             textView.setTextColor(getResources().getColor(R.color.success, null));
             textView.setText("+" + text);
         }

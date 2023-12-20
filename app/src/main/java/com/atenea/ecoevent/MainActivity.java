@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             FileWriter writer = new FileWriter(events);
 
-            //Name, Date, Food, Drink, Decoration, Reused, Recicled.
+            //Name, Date, Food, Drink, Decoration, Reused, Recycled.
             writer.append("Evento 1,01/01/2023,1,2,3,4,5\n");
             writer.append("Evento 2,02/02/2023,10,2,3,5,5\n");
             writer.append("Evento 3,03/03/2023,6,2,8,4,5\n");
