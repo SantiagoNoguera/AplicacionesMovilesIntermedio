@@ -45,7 +45,6 @@ public class HomeActivity extends AppCompatActivity {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(dataEvents));
             String lineContent;
-            lines = 0;
 
             while ((lineContent = reader.readLine()) != null) {
                 //Obtener los datos del evento al dividir la cadena de texto de cada linea del archivo.
@@ -64,9 +63,6 @@ public class HomeActivity extends AppCompatActivity {
                 //Se crea un nuevo objeto Event y se añade a la lista de eventos.
                 Event newEvent = new Event(name, date, food, drink, decoration, reused, recycled);
                 events.add(newEvent);
-
-                //Contar la cantidad de registros en el archivo.
-                lines++;
             }
 
             reader.close();
@@ -77,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         //Establecer número total de eventos en el registro.
-        eventsTV.setText(String.valueOf(lines));
+        eventsTV.setText(String.valueOf(events.size()));
 
         //Establecer total de alimentos en la vista (cantidad del ultimo elemento menos la cantidad del penultimo evento).
         showDataInformation(foodTV, events.get(events.size()-1).getFood() - events.get(events.size()-2).getFood());
