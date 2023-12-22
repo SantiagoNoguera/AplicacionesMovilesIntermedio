@@ -41,7 +41,6 @@ public class HomeActivity extends AppCompatActivity {
         File dataEvents = new File(getFilesDir(), "events.txt");
         ArrayList<Event> events = new ArrayList<>();
 
-        Integer lines = null;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(dataEvents));
             String lineContent;
