@@ -124,7 +124,7 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     //Método para calcular la información que se mostrará en la vista.
-    public void showData(ArrayList<String> dataCategories, Integer position) {
+    private void showData(ArrayList<String> dataCategories, Integer position) {
         Double max = Double.NEGATIVE_INFINITY;
         Double min = Double.POSITIVE_INFINITY;
 
