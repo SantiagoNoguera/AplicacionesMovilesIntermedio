@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:textAlignment="center"
         android:text="Categoría"
-        android:textSize="32dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
@@ -34,7 +34,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="Total"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -45,7 +45,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="157"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/secondary"/>
             
@@ -63,7 +63,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="Promedio"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -74,7 +74,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="48"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/information"/>
 
@@ -92,7 +92,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="Meta"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -103,7 +103,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="300"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/warning"/>
 
@@ -121,7 +121,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="Faltante"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
@@ -132,7 +132,7 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:text="143"
-                android:textSize="23dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="@color/success"/>
 

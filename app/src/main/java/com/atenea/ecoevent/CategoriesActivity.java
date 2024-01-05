@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.atenea.ecoevent.models.Category;
 import com.atenea.ecoevent.models.Event;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -95,15 +96,6 @@ public class CategoriesActivity extends AppCompatActivity {
     }
 
     private void showCategoriesInformation() {
-        //Referencía a elementos de la vista.
-        categoriesInformationLV = findViewById(R.id.lv_categories_information);
-
-        TextView listCategoryTV = findViewById(R.id.tv_list_category);
-        TextView listTotalTV = findViewById(R.id.tv_list_total);
-        TextView listMediaTV = findViewById(R.id.tv_list_media);
-        TextView listMetaTV = findViewById(R.id.tv_list_meta);
-        TextView listMissingTV = findViewById(R.id.tv_list_missing);
-
         //Leer los datos del archivo de eventos.
         File dataEvents = new File(getFilesDir(), "events.txt");
         ArrayList<Event> events = new ArrayList<>();
@@ -138,7 +130,35 @@ public class CategoriesActivity extends AppCompatActivity {
             throw new RuntimeException(e);
         }
 
-        //ArrayAdapter<Event> adapter = new ArrayAdapter<>(this, R.layout.list_view, events);
-        //categoriesInformationLV.setAdapter(adapter);
+        //Referencía a lista de la vista.
+        categoriesInformationLV = findViewById(R.id.lv_categories_information);
+
+        //Arreglo con la información de cada una de las categorías.
+        ArrayList<Category> categories = new ArrayList<>();
+
+        Integer totalFood = 0;
+        Integer totalDrink = 0;
+        Integer totalDecoration = 0;
+        Integer totalReused = 0;
+        Integer totalRecycled = 0;
+
+        for (Event event: events) {
+            totalFood += event.getFood();
+            totalDrink += event.getDrink();
+            totalDecoration += event.getDecoration();
+            totalReused += event.getReused();
+            totalRecycled += event.getRecycled();
+        }
+
+        Integer meta = 300;
+
+        categories.add(new Category(items[0], totalFood, Float.valueOf(totalFood) / events.size(), meta, meta - totalFood));
+        categories.add(new Category(items[1], totalDrink, Float.valueOf(totalDrink) / events.size(), meta, meta - totalDrink));
+        categories.add(new Category(items[2], totalDecoration, Float.valueOf(totalDecoration) / events.size(), meta, meta - totalDecoration));
+        categories.add(new Category(items[3], totalReused, Float.valueOf(totalReused) / events.size(), meta, meta - totalReused));
+        categories.add(new Category(items[4], totalRecycled, Float.valueOf(totalRecycled) / events.size(), meta, meta - totalRecycled));
+
+        CategoryAdapter adapter = new CategoryAdapter(this, categories);
+        categoriesInformationLV.setAdapter(adapter);
     }
 }
