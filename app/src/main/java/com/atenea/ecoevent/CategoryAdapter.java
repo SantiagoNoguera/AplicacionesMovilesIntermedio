@@ -46,6 +46,14 @@ public class CategoryAdapter extends ArrayAdapter<Category> {
         mediaTV.setText(String.valueOf(format.format(category.getMedia())));
 
         metaTV.setText(String.valueOf(category.getMeta()));
+
+        if (category.getMissing() <= category.getMeta() / 2) {
+            missingTV.setTextColor(convertView.getResources().getColor(R.color.success));
+        }
+        else {
+            missingTV.setTextColor(convertView.getResources().getColor(R.color.error));
+        }
+
         missingTV.setText(String.valueOf(category.getMissing()));
 
         return convertView;

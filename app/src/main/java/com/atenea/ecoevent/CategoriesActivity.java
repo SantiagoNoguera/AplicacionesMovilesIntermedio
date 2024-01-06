@@ -153,10 +153,10 @@ public class CategoriesActivity extends AppCompatActivity {
         Integer meta = 300;
 
         categories.add(new Category(items[0], totalFood, Float.valueOf(totalFood) / events.size(), meta, meta - totalFood));
-        categories.add(new Category(items[1], totalDrink, Float.valueOf(totalDrink) / events.size(), meta, meta - totalDrink));
-        categories.add(new Category(items[2], totalDecoration, Float.valueOf(totalDecoration) / events.size(), meta, meta - totalDecoration));
+        categories.add(new Category(items[1], totalDrink, Float.valueOf(totalDrink) / events.size(), 10, 10 - totalDrink));
+        categories.add(new Category(items[2], totalDecoration, Float.valueOf(totalDecoration) / events.size(), 50, 50 - totalDecoration));
         categories.add(new Category(items[3], totalReused, Float.valueOf(totalReused) / events.size(), meta, meta - totalReused));
-        categories.add(new Category(items[4], totalRecycled, Float.valueOf(totalRecycled) / events.size(), meta, meta - totalRecycled));
+        categories.add(new Category(items[4], totalRecycled, Float.valueOf(totalRecycled) / events.size(), 150, 150 - totalRecycled));
 
         CategoryAdapter adapter = new CategoryAdapter(this, categories);
         categoriesInformationLV.setAdapter(adapter);
